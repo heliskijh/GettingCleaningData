@@ -102,6 +102,7 @@ the "features.txt" file is correct while the descriptor in the readme file is wr
 ## Retrieving the results
 The output file "CourseProjectOutput.txt" can be read into R for examination with the
 following code:
+	
 	- data <- read.table("CourseProjectOutput.txt", header=TRUE)
 
 
