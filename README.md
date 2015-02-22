@@ -102,7 +102,7 @@ the "features.txt" file is correct while the descriptor in the readme file is wr
 ## Retrieving the results
 The output file "CourseProjectOutput.txt" can be read into R for examination with the
 following code:
-read.table("UCI HAR Dataset/features.txt", header=TRUE)
+read.table("UCI HAR Dataset/CourseProjectOutput.txt", header=TRUE)
 
 
 
