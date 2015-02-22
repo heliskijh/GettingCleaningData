@@ -63,5 +63,5 @@ outputData <- x %>% group_by(ParticipantID, Activity) %>% summarise_each(funs(me
 rm(x)
 
 ##output tidy dataset in .txt format
-write.table(outputData, file= "UCI HAR Dataset/CourseProjectOutput.txt", row.names=FALSE)
+write.table(outputData, file= "CourseProjectOutput.txt", row.names=FALSE)
 
