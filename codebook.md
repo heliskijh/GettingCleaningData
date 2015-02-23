@@ -36,20 +36,18 @@ the chain of data.
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+-mean(): Mean value
+-std(): Standard deviation
 
 Furthermore, each measurement variable was reduced to an average of the participants
 30 repititions of each activity per the course assignment.  
 
 
-COL	VARIABLE					VALUE RANGE
-
 ###Individual participant ID's
-1	ParticipantID				Numeric: 1-30
+1.	ParticipantID				Numeric: 1-30
 
 ###Activity each participant performed	
-2 	Activity					WALKING
+2. 	Activity					WALKING
 								WALKING_UPSTAIRS
 								WALKING_DOWNSTAIRS
 								SITTING
@@ -58,204 +56,138 @@ COL	VARIABLE					VALUE RANGE
 								
 ##Researcher measured signals
 ###accelerometer and gyroscope 3-axial raw signals separated into body gravity and 
-acceleration signals
-3 	tBodyAcc-mean()-X			Min.   :0.2216   
-								Max.   :0.3015  
+###acceleration signals
+3. 	tBodyAcc-mean()-X			Min.   :0.2216		Max.   :0.3015  
 
-4	tBodyAcc-mean()-Y			Min.   :-0.040514    
-								Max.   :-0.001308  
+4.	tBodyAcc-mean()-Y			Min.   :-0.040514    	Max.   :-0.001308  
 
-5	tBodyAcc-mean()-Z			Min.   :-0.15251  
-  								Max.   :-0.07538  
+5.	tBodyAcc-mean()-Z			Min.   :-0.15251  	Max.   :-0.07538  
 
-6 	tBodyAcc-std()-X			Min.   :-0.9961  
-								Max.   : 0.6269  
+6. 	tBodyAcc-std()-X			Min.   :-0.9961 	Max.   : 0.6269  
 
-7 	tBodyAcc-std()-Y			Min.   :-0.99024  
-  								Max.   : 0.61694  
+7. 	tBodyAcc-std()-Y			Min.   :-0.99024 	Max.   : 0.61694  
 
-8 	tBodyAcc-std()-Z			Min.   :-0.9877  
-  								Max.   : 0.6090  
+8. 	tBodyAcc-std()-Z			Min.   :-0.9877  	Max.   : 0.6090  
 
-9  	tGravityAcc-mean()-X		Min.   :-0.6800  
-								Max.   : 0.9745  
+9.  	tGravityAcc-mean()-X			Min.   :-0.6800  	Max.   : 0.9745  
 
-10 	tGravityAcc-mean()-Y		Min.   :-0.47989  
-								Max.   : 0.95659  
+10. 	tGravityAcc-mean()-Y			Min.   :-0.47989  	Max.   : 0.95659  
 
-11 	tGravityAcc-mean()-Z		Min.   :-0.49509  
-								Max.   : 0.95787  
-								
-12 	tGravityAcc-std()-X			Min.   :-0.9968  
-								Max.   :-0.8296  
+11. 	tGravityAcc-mean()-Z			Min.   :-0.49509  	Max.   : 0.95787  
+	
+12. 	tGravityAcc-std()-X			Min.   :-0.9968  	Max.   :-0.8296  
 
-13 	tGravityAcc-std()-Y			Min.   :-0.9942  
-								Max.   :-0.6436  
+13. 	tGravityAcc-std()-Y			Min.   :-0.9942  	Max.   :-0.6436  
 
-14 	tGravityAcc-std()-Z			Min.   :-0.9910  
-								Max.   :-0.6102  
+14. 	tGravityAcc-std()-Z			Min.   :-0.9910  	Max.   :-0.6102  
 
 ###Body linear acceleration and angular velocity
-15 	tBodyAccJerk-mean()-X		Min.   :0.04269  
-								Max.   :0.13019  
-								
-16 	tBodyAccJerk-mean()-Y		Min.   :-0.0386872  
-								Max.   : 0.0568186  
-
-17 	tBodyAccJerk-mean()-Z		Min.   :-0.067458  
-								Max.   : 0.038053  
-
-18 	tBodyAccJerk-std()-X		Min.   :-0.9946  
-								Max.   : 0.5443  
-
-19 	tBodyAccJerk-std()-Y		Min.   :-0.9895  
-								Max.   : 0.3553  
-
-20	tBodyAccJerk-std()-Z		Min.   :-0.99329  
-								Max.   : 0.03102  
-
-21 	tBodyGyro-mean()-X			Min.   :-0.20578  
-								Max.   : 0.19270  
-
-22 	tBodyGyro-mean()-Y			Min.   :-0.20421  
-								Max.   : 0.02747  
-
-23 	tBodyGyro-mean()-Z			Min.   :-0.07245  
-								Max.   : 0.17910  
-
-24 	tBodyGyro-std()-X			Min.   :-0.9943  
-								Max.   : 0.2677  
-
-25 	tBodyGyro-std()-Y			Min.   :-0.9942  
-								Max.   : 0.4765  
-
-26 	tBodyGyro-std()-Z			Min.   :-0.9855  
-								Max.   : 0.5649  
-
-27 	tBodyGyroJerk-mean()-X		Min.   :-0.15721  
-								Max.   :-0.02209  
-
-28 	tBodyGyroJerk-mean()-Y		Min.   :-0.07681  
-								Max.   :-0.01320  
-
-29 	tBodyGyroJerk-mean()-Z		Min.   :-0.092500  
-								Max.   :-0.006941  
-
-30 	tBodyGyroJerk-std()-X		Min.   :-0.9965  
-								Max.   : 0.1791  
+15. 	tBodyAccJerk-mean()-X			Min.   :0.04269  	Max.   :0.13019  
 	
-31 	tBodyGyroJerk-std()-Y		Min.   :-0.9971  
-								Max.   : 0.2959  
+16. 	tBodyAccJerk-mean()-Y			Min.   :-0.0386872  	Max.   : 0.0568186  
 
-32 	tBodyGyroJerk-std()-Z		Min.   :-0.9954  
-								Max.   : 0.1932  
+17. 	tBodyAccJerk-mean()-Z			Min.   :-0.067458  	Max.   : 0.038053  
+
+18. 	tBodyAccJerk-std()-X			Min.   :-0.9946  	Max.   : 0.5443  
+
+19. 	tBodyAccJerk-std()-Y			Min.   :-0.9895  	Max.   : 0.3553  
+
+20.	tBodyAccJerk-std()-Z			Min.   :-0.99329  	Max.   : 0.03102  
+
+21. 	tBodyGyro-mean()-X			Min.   :-0.20578  	Max.   : 0.19270  
+
+22. 	tBodyGyro-mean()-Y			Min.   :-0.20421  	Max.   : 0.02747  
+
+23. 	tBodyGyro-mean()-Z			Min.   :-0.07245  	Max.   : 0.17910  
+
+24. 	tBodyGyro-std()-X			Min.   :-0.9943  	Max.   : 0.2677  
+
+25. 	tBodyGyro-std()-Y			Min.   :-0.9942  	Max.   : 0.4765  
+
+26. 	tBodyGyro-std()-Z			Min.   :-0.9855  	Max.   : 0.5649  
+
+27. 	tBodyGyroJerk-mean()-X			Min.   :-0.15721  	Max.   :-0.02209  
+
+28. 	tBodyGyroJerk-mean()-Y			Min.   :-0.07681  	Max.   :-0.01320  
+
+29. 	tBodyGyroJerk-mean()-Z			Min.   :-0.092500  	Max.   :-0.006941  
+
+30. 	tBodyGyroJerk-std()-X			Min.   :-0.9965  	Max.   : 0.1791  
+	
+31. 	tBodyGyroJerk-std()-Y			Min.   :-0.9971  	Max.   : 0.2959  
+
+32. 	tBodyGyroJerk-std()-Z			Min.   :-0.9954  	Max.   : 0.1932  
 
 ###Magnitude of three-dimensional signals calculated using the Euclidean norm
-33 	tBodyAccMag-mean()			Min.   :-0.9865  
-								Max.   : 0.6446  
+33. 	tBodyAccMag-mean()			Min.   :-0.9865  	Max.   : 0.6446  
 
-34 	tBodyAccMag-std()			Min.   :-0.9865  
-								Max.   : 0.4284  
-								
-35 	tGravityAccMag-mean()		Min.   :-0.9865  
-								Max.   : 0.6446  
+34. 	tBodyAccMag-std()			Min.   :-0.9865  	Max.   : 0.4284  
+	
+35.	tGravityAccMag-mean()			Min.   :-0.9865  	Max.   : 0.6446  
 
-36 	tGravityAccMag-std()		Min.   :-0.9865  
-								Max.   : 0.4284  
+36. 	tGravityAccMag-std()			Min.   :-0.9865  	Max.   : 0.4284  
 
-37 	tBodyAccJerkMag-mean()		Min.   :-0.9928  
-								Max.   : 0.4345  
+37. 	tBodyAccJerkMag-mean()			Min.   :-0.9928  	Max.   : 0.4345  
 
-38 	tBodyAccJerkMag-std()		Min.   :-0.9946  
-								Max.   : 0.4506  
+38. 	tBodyAccJerkMag-std()			Min.   :-0.9946  	Max.   : 0.4506  
 
-39 	tBodyGyroMag-mean()			Min.   :-0.9807  
-								Max.   : 0.4180  
+39. 	tBodyGyroMag-mean()			Min.   :-0.9807  	Max.   : 0.4180  
 
-40 	tBodyGyroMag-std()			Min.   :-0.9814  
-								Max.   : 0.3000  
+40. 	tBodyGyroMag-std()			Min.   :-0.9814  	Max.   : 0.3000  
 
-41 	tBodyGyroJerkMag-mean()		Min.   :-0.99732  
-								Max.   : 0.08758  
+41. 	tBodyGyroJerkMag-mean()			Min.   :-0.99732  	Max.   : 0.08758  
 
-42 	tBodyGyroJerkMag-std()		Min.   :-0.9977  
-								Max.   : 0.2502  
+42. 	tBodyGyroJerkMag-std()			Min.   :-0.9977  	Max.   : 0.2502  
 
 ###Fast Fourier Transform Products
-43 	fBodyAcc-mean()-X			Min.   :-0.9952  
-								Max.   : 0.5370  
+43. 	fBodyAcc-mean()-X			Min.   :-0.9952  	Max.   : 0.5370  
 
-44 	fBodyAcc-mean()-Y			Min.   :-0.98903  
-								Max.   : 0.52419  
+44. 	fBodyAcc-mean()-Y			Min.   :-0.98903  	Max.   : 0.52419  
 
-45 	fBodyAcc-mean()-Z			Min.   :-0.9895  
-								Max.   : 0.2807  
+45. 	fBodyAcc-mean()-Z			Min.   :-0.9895  	Max.   : 0.2807  
 
-46 	fBodyAcc-std()-X			Min.   :-0.9966  
-								Max.   : 0.6585  
+46. 	fBodyAcc-std()-X			Min.   :-0.9966  	Max.   : 0.6585  
 
-47 	fBodyAcc-std()-Y			Min.   :-0.99068  
-								Max.   : 0.56019  
+47. 	fBodyAcc-std()-Y			Min.   :-0.99068  	Max.   : 0.56019  
 
-48 	fBodyAcc-std()-Z			Min.   :-0.9872  
-								Max.   : 0.6871  
+48. 	fBodyAcc-std()-Z			Min.   :-0.9872  	Max.   : 0.6871  
 
-49 	fBodyAccJerk-mean()-X		Min.   :-0.9946  
-								Max.   : 0.4743  
+49. 	fBodyAccJerk-mean()-X			Min.   :-0.9946  	Max.   : 0.4743  
 
-50 	fBodyAccJerk-mean()-Y		Min.   :-0.9894  
-								Max.   : 0.2767  
+50. 	fBodyAccJerk-mean()-Y			Min.   :-0.9894  	Max.   : 0.2767  
 
-51 	fBodyAccJerk-mean()-Z		Min.   :-0.9920  
-								Max.   : 0.1578  
+51. 	fBodyAccJerk-mean()-Z			Min.   :-0.9920 	Max.   : 0.1578  
 
-52 	fBodyAccJerk-std()-X		Min.   :-0.9951  
-								Max.   : 0.4768  
+52. 	fBodyAccJerk-std()-X			Min.   :-0.9951  	Max.   : 0.4768  
 
-53 	fBodyAccJerk-std()-Y		Min.   :-0.9905  
-								Max.   : 0.3498  
+53. 	fBodyAccJerk-std()-Y			Min.   :-0.9905  	Max.   : 0.3498  
 
-54 	fBodyAccJerk-std()-Z		Min.   :-0.993108  
-								Max.   :-0.006236  
+54. 	fBodyAccJerk-std()-Z			Min.   :-0.993108  	Max.   :-0.006236  
 
-55 	fBodyGyro-mean()-X			Min.   :-0.9931  
-								Max.   : 0.4750  
+55. 	fBodyGyro-mean()-X			Min.   :-0.9931  	Max.   : 0.4750  
 
-56 	fBodyGyro-mean()-Y			Min.   :-0.9940  
-								Max.   : 0.3288  
+56. 	fBodyGyro-mean()-Y			Min.   :-0.9940  	Max.   : 0.3288  
 
-57 	fBodyGyro-mean()-Z			Min.   :-0.9860  
-								Max.   : 0.4924  
+57. 	fBodyGyro-mean()-Z			Min.   :-0.9860  	Max.   : 0.4924  
 
-58 	fBodyGyro-std()-X			Min.   :-0.9947  
-								Max.   : 0.1966  
-								
-59 	fBodyGyro-std()-Y			Min.   :-0.9944  
-								Max.   : 0.6462  
+58. 	fBodyGyro-std()-X			Min.   :-0.9947  	Max.   : 0.1966  
+	
+59. 	fBodyGyro-std()-Y			Min.   :-0.9944  	Max.   : 0.6462  
 
-60 	fBodyGyro-std()-Z			Min.   :-0.9867  
-								Max.   : 0.5225  
+60. 	fBodyGyro-std()-Z			Min.   :-0.9867  	Max.   : 0.5225  
 
-61 	fBodyAccMag-mean()			Min.   :-0.9868  
-								Max.   : 0.5866  
+61. 	fBodyAccMag-mean()			Min.   :-0.9868  	Max.   : 0.5866  
 
-62 	fBodyAccMag-std()			Min.   :-0.9876  
-								Max.   : 0.1787  
+62. 	fBodyAccMag-std()			Min.   :-0.9876  	Max.   : 0.1787  
 
-63 	fBodyBodyAccJerkMag-mean()	Min.   :-0.9940  
-								Max.   : 0.5384  
+63. 	fBodyBodyAccJerkMag-mean()		Min.   :-0.9940  	Max.   : 0.5384  
 
-64 	fBodyBodyAccJerkMag-std()	Min.   :-0.9944  
-								Max.   : 0.3163  
+64. 	fBodyBodyAccJerkMag-std()		Min.   :-0.9944  	Max.   : 0.3163  
 
-65 	fBodyBodyGyroMag-mean()		Min.   :-0.9865  
-								Max.   : 0.2040  
+65. 	fBodyBodyGyroMag-mean()			Min.   :-0.9865  	Max.   : 0.2040  
 
-66 	fBodyBodyGyroMag-std()		Min.   :-0.9815  
-								Max.   : 0.2367  
+66. 	fBodyBodyGyroMag-std()			Min.   :-0.9815  	Max.   : 0.2367  
 
-67 	fBodyBodyGyroJerkMag-mean()	Min.   :-0.9976  
-								Max.   : 0.1466  
+67. 	fBodyBodyGyroJerkMag-mean()		Min.   :-0.9976  	Max.   : 0.1466  
 
-68	fBodyBodyGyroJerkMag-std()	Min.   :-0.9976  
-								Max.   : 0.2878  
+68.	fBodyBodyGyroJerkMag-std()		Min.   :-0.9976  	Max.   : 0.2878  
