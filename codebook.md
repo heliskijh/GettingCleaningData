@@ -54,17 +54,17 @@ Furthermore, each measurement variable was reduced to an average of the particip
 -Researcher measured signals-
 -accelerometer and gyroscope 3-axial raw signals separated into body gravity and acceleration signals-
 
-3. 	tBodyAcc-mean()-X			Min.   :0.2216		Max.   :0.3015  
+3.  	tBodyAcc-mean()-X			Min.   :0.2216		Max.   :0.3015                    
 
-4.	tBodyAcc-mean()-Y			Min.   :-0.040514    	Max.   :-0.001308  
+4.  	tBodyAcc-mean()-Y			Min.   :-0.040514    	Max.   :-0.001308    
 
-5.	tBodyAcc-mean()-Z			Min.   :-0.15251  	Max.   :-0.07538  
+5.  	tBodyAcc-mean()-Z			Min.   :-0.15251  	Max.   :-0.07538    
 
-6. 	tBodyAcc-std()-X			Min.   :-0.9961 	Max.   : 0.6269  
+6.  	tBodyAcc-std()-X			Min.   :-0.9961 	Max.   : 0.6269    
 
-7. 	tBodyAcc-std()-Y			Min.   :-0.99024 	Max.   : 0.61694  
+7.  	tBodyAcc-std()-Y			Min.   :-0.99024 	Max.   : 0.61694    
 
-8.	tBodyAcc-std()-Z			Min.   :-0.9877  	Max.   : 0.6090  
+8.  	tBodyAcc-std()-Z			Min.   :-0.9877  	Max.   : 0.6090    
 
 9.  	tGravityAcc-mean()-X			Min.   :-0.6800  	Max.   : 0.9745  
 
@@ -76,7 +76,7 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 13. 	tGravityAcc-std()-Y			Min.   :-0.9942  	Max.   :-0.6436  
 
-14.	tGravityAcc-std()-Z			Min.   :-0.9910  	Max.   :-0.6102  
+14.  	tGravityAcc-std()-Z			Min.   :-0.9910  	Max.   :-0.6102  
 
 -Body linear acceleration and angular velocity-
 
