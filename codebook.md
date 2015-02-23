@@ -47,11 +47,11 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 -Individual participant ID's-
 
-1.  	ParticipantID:				Numeric: 1-30
+1.  	ParticipantID:			Numeric: 1-30
 
 -Activity each participant performed-
 
-2.  	Activity:	WALKING		WALKING_UPSTAIRS	WALKING_DOWNSTAIRS	SITTING		STANDING	LAYING
+2.  	Activity:	WALKING,	WALKING_UPSTAIRS,	WALKING_DOWNSTAIRS,	SITTING,	STANDING,	LAYING
 	
 -Researcher measured signals-
 -accelerometer and gyroscope 3-axial raw signals separated into body gravity and acceleration signals-
