@@ -45,11 +45,11 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 -Individual participant ID's-
 
-1.	ParticipantID:				Numeric: 1-30
+1.  	ParticipantID:				Numeric: 1-30
 
 -Activity each participant performed-
 
-2. 	Activity:	WALKING		WALKING_UPSTAIRS	WALKING_DOWNSTAIRS	SITTING		STANDING	LAYING
+2.  	Activity:	WALKING		WALKING_UPSTAIRS	WALKING_DOWNSTAIRS	SITTING		STANDING	LAYING
 	
 -Researcher measured signals-
 -accelerometer and gyroscope 3-axial raw signals separated into body gravity and acceleration signals-
@@ -90,7 +90,7 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 19. 	tBodyAccJerk-std()-Y			Min.   :-0.9895  	Max.   : 0.3553  
 
-20.	tBodyAccJerk-std()-Z			Min.   :-0.99329  	Max.   : 0.03102  
+20.  	tBodyAccJerk-std()-Z			Min.   :-0.99329  	Max.   : 0.03102  
 
 21. 	tBodyGyro-mean()-X			Min.   :-0.20578  	Max.   : 0.19270  
 
@@ -122,7 +122,7 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 34. 	tBodyAccMag-std()			Min.   :-0.9865  	Max.   : 0.4284  
 	
-35.	tGravityAccMag-mean()			Min.   :-0.9865  	Max.   : 0.6446  
+35.  	tGravityAccMag-mean()			Min.   :-0.9865  	Max.   : 0.6446  
 
 36. 	tGravityAccMag-std()			Min.   :-0.9865  	Max.   : 0.4284  
 
@@ -189,4 +189,4 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 67. 	fBodyBodyGyroJerkMag-mean()		Min.   :-0.9976  	Max.   : 0.1466  
 
-68.	fBodyBodyGyroJerkMag-std()		Min.   :-0.9976  	Max.   : 0.2878  
+68.  	fBodyBodyGyroJerkMag-std()		Min.   :-0.9976  	Max.   : 0.2878  
