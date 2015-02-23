@@ -27,8 +27,9 @@ I chose to isolate only the variables who's description had "mean" or "std" sepa
 the descriptor. The Features Selection document defined the "mean" and "std" of the 
 measurements of each accelerometer and gyroscope and their axial signals as:  
 
-mean(): Mean value
-std(): Standard deviation
+mean(): Mean value  
+std(): Standard deviation  
+
 
 I felt it was necessary to capture all three axes "XYZ" of the mean and std measurements.
 I did not change variable names from the Features Selection document in order to preserve 
@@ -36,8 +37,9 @@ the chain of data.
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+mean(): Mean value  
+std(): Standard deviation  
+
 
 Furthermore, each measurement variable was reduced to an average of the participants
 30 repititions of each activity per the course assignment.  
