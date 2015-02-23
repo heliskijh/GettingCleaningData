@@ -36,27 +36,24 @@ the chain of data.
 
 The set of variables that were estimated from these signals are: 
 
--mean(): Mean value
--std(): Standard deviation
+mean(): Mean value
+std(): Standard deviation
 
 Furthermore, each measurement variable was reduced to an average of the participants
 30 repititions of each activity per the course assignment.  
 
 
-###Individual participant ID's
-1.	ParticipantID				Numeric: 1-30
+-Individual participant ID's-
 
-###Activity each participant performed	
-2. 	Activity					WALKING
-								WALKING_UPSTAIRS
-								WALKING_DOWNSTAIRS
-								SITTING
-								STANDING
-								LAYING
-								
-##Researcher measured signals
-###accelerometer and gyroscope 3-axial raw signals separated into body gravity and 
-###acceleration signals
+1.	ParticipantID:				Numeric: 1-30
+
+-Activity each participant performed-
+
+2. 	Activity:	WALKING		WALKING_UPSTAIRS	WALKING_DOWNSTAIRS	SITTING		STANDING	LAYING
+	
+-Researcher measured signals-
+-accelerometer and gyroscope 3-axial raw signals separated into body gravity and acceleration signals-
+
 3. 	tBodyAcc-mean()-X			Min.   :0.2216		Max.   :0.3015  
 
 4.	tBodyAcc-mean()-Y			Min.   :-0.040514    	Max.   :-0.001308  
@@ -67,7 +64,7 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 7. 	tBodyAcc-std()-Y			Min.   :-0.99024 	Max.   : 0.61694  
 
-8. 	tBodyAcc-std()-Z			Min.   :-0.9877  	Max.   : 0.6090  
+8.	tBodyAcc-std()-Z			Min.   :-0.9877  	Max.   : 0.6090  
 
 9.  	tGravityAcc-mean()-X			Min.   :-0.6800  	Max.   : 0.9745  
 
@@ -79,9 +76,10 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 13. 	tGravityAcc-std()-Y			Min.   :-0.9942  	Max.   :-0.6436  
 
-14. 	tGravityAcc-std()-Z			Min.   :-0.9910  	Max.   :-0.6102  
+14.	tGravityAcc-std()-Z			Min.   :-0.9910  	Max.   :-0.6102  
 
-###Body linear acceleration and angular velocity
+-Body linear acceleration and angular velocity-
+
 15. 	tBodyAccJerk-mean()-X			Min.   :0.04269  	Max.   :0.13019  
 	
 16. 	tBodyAccJerk-mean()-Y			Min.   :-0.0386872  	Max.   : 0.0568186  
@@ -118,7 +116,8 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 32. 	tBodyGyroJerk-std()-Z			Min.   :-0.9954  	Max.   : 0.1932  
 
-###Magnitude of three-dimensional signals calculated using the Euclidean norm
+-Magnitude of three-dimensional signals calculated using the Euclidean norm-
+
 33. 	tBodyAccMag-mean()			Min.   :-0.9865  	Max.   : 0.6446  
 
 34. 	tBodyAccMag-std()			Min.   :-0.9865  	Max.   : 0.4284  
@@ -139,7 +138,7 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 42. 	tBodyGyroJerkMag-std()			Min.   :-0.9977  	Max.   : 0.2502  
 
-###Fast Fourier Transform Products
+-Fast Fourier Transform Products-
 43. 	fBodyAcc-mean()-X			Min.   :-0.9952  	Max.   : 0.5370  
 
 44. 	fBodyAcc-mean()-Y			Min.   :-0.98903  	Max.   : 0.52419  
