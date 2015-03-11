@@ -62,6 +62,11 @@ rm(sub, head, y, header, colgrab) #remove data frames no longer needed
 outputData <- x %>% group_by(ParticipantID, Activity) %>% summarise_each(funs(mean))
 rm(x)
 
+## make variable names tidy data/R compliant, remove duplicated "body" in names
+colnames(outputData) <- tolower(names(outputData)) # change all variable names to lower case
+colnames(outputData) <- gsub("-", "", names(outputData)) # remove "-" from variable names
+colnames(outputData) <- gsub(pattern = "bodybody", replacement = "body", names(outputData))
+
 ##output tidy dataset in .txt format
 write.table(outputData, file= "CourseProjectOutput.txt", row.names=FALSE)
 
