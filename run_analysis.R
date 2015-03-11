@@ -19,27 +19,32 @@ getheader <- function(datatable){ #function definition
   return(headFull) #returns the resulting data frame
 }
 
+print("-Loading x tables")
 ## loads X_test and X_train data frames into R
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 x <- rbind(x_test, x_train) #bind data frames together by row and outputs to single data frame
 rm(x_test, x_train) #remove data frames no longer needed
 
+print("-Loading y tables")
 ## loads y_test and y_train data frames into R
 y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 y <- rbind(y_test, y_train) #bind data frames together by row and outputs to single data frame
 rm(y_test, y_train) #remove data frame no longer needed
 
+print("-Loading sub tables")
 ##loads sub_test and sub_train tables into R
 sub_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
 sub_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
 sub <- rbind(sub_test, sub_train) #bind data frames together by row and outputs to single data frame
 rm(sub_test, sub_train) #remove data frames no longer needed
 
+
+print("-Combining data frames")
 ##read header file features.txt into data frame
 header <- read.table("UCI HAR Dataset/features.txt", stringsAsFactors=FALSE)
-colnames(x) <- header[,"V2"] #retirieve all variable chrachter names & assign to appropriate data columns
+colnames(x) <- tolower(header[,"V2"]) #retirieve all variable chrachter names & assign to appropriate data columns
 colnames(y) <- c("Activity") #name y column
 colnames(sub) <- c("ParticipantID") #name subject column 
 
@@ -62,6 +67,12 @@ rm(sub, head, y, header, colgrab) #remove data frames no longer needed
 outputData <- x %>% group_by(ParticipantID, Activity) %>% summarise_each(funs(mean))
 rm(x)
 
-##output tidy dataset in .txt format
+## make variable names tidy data/R compliant, remove duplicated "body" in names
+colnames(outputData) <- tolower(names(outputData)) # change all variable names to lower case
+colnames(outputData) <- gsub("-", "", names(outputData)) # remove "-" from variable names
+colnames(outputData) <- gsub(pattern = "bodybody", replacement = "body", names(outputData))
+
+## output tidy dataset in .txt format
 write.table(outputData, file= "CourseProjectOutput.txt", row.names=FALSE)
 
+print("-Script Finished")
