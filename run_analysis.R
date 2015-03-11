@@ -72,11 +72,7 @@ colnames(outputData) <- tolower(names(outputData)) # change all variable names t
 colnames(outputData) <- gsub("-", "", names(outputData)) # remove "-" from variable names
 colnames(outputData) <- gsub(pattern = "bodybody", replacement = "body", names(outputData))
 
-<<<<<<< HEAD
-## output tidy dataset in .txt format
-=======
 ##output tidy dataset in .txt format
->>>>>>> 354e0c9d6334b8863d715865be058640fe553a2c
 write.table(outputData, file= "CourseProjectOutput.txt", row.names=FALSE)
 
 print("-Script Finished")
