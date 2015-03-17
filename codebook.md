@@ -18,7 +18,10 @@ tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing 
 fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, 
-fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). Some signals
+have the term "Body" duplicated ie:(fBodyBodyAccJerkMag-mean()). The duplicated "Body"
+was removed from the variable names to match the original data's codebook. The edidted
+body variables are denoted with an *.
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -30,10 +33,7 @@ measurements of each accelerometer and gyroscope and their axial signals as:
 mean(): Mean value  
 std(): Standard deviation  
 
-
 I felt it was necessary to capture all three axes "XYZ" of the mean and std measurements.
-I did not change variable names from the Features Selection document in order to preserve 
-the chain of data.
 
 The set of variables that were estimated from these signals are: 
 
@@ -42,7 +42,9 @@ std(): Standard deviation
 
 
 Furthermore, each measurement variable was reduced to an average of the participants
-30 repititions of each activity per the course assignment.  
+30 repititions of each activity per the course assignment.  All  variable names
+are converted to lowercase, and "-" removed from the names for the output data.  This
+was done to comply with the idea of tidy data and data that was R compliant.
 
 
 -Individual participant ID's-
@@ -181,14 +183,14 @@ Furthermore, each measurement variable was reduced to an average of the particip
 
 62. 	fBodyAccMag-std()			Min.   :-0.9876  	Max.   : 0.1787  
 
-63. 	fBodyBodyAccJerkMag-mean()		Min.   :-0.9940  	Max.   : 0.5384  
+63. 	*fBodyAccJerkMag-mean()			Min.   :-0.9940  	Max.   : 0.5384  
 
-64. 	fBodyBodyAccJerkMag-std()		Min.   :-0.9944  	Max.   : 0.3163  
+64. 	*fBodyAccJerkMag-std()			Min.   :-0.9944  	Max.   : 0.3163  
 
-65. 	fBodyBodyGyroMag-mean()			Min.   :-0.9865  	Max.   : 0.2040  
+65. 	*fBodyGyroMag-mean()			Min.   :-0.9865  	Max.   : 0.2040  
 
-66. 	fBodyBodyGyroMag-std()			Min.   :-0.9815  	Max.   : 0.2367  
+66. 	*fBodyGyroMag-std()			Min.   :-0.9815  	Max.   : 0.2367  
 
-67. 	fBodyBodyGyroJerkMag-mean()		Min.   :-0.9976  	Max.   : 0.1466  
+67. 	*fBodyGyroJerkMag-mean()		Min.   :-0.9976  	Max.   : 0.1466  
 
-68.  	fBodyBodyGyroJerkMag-std()		Min.   :-0.9976  	Max.   : 0.2878  
+68.  	*fBodyGyroJerkMag-std()			Min.   :-0.9976  	Max.   : 0.2878  
