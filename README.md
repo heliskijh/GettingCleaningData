@@ -82,8 +82,13 @@ install it before running this script.
 			  each activity	accomplished
 			* Assign the result to it's own DF - outputData
 			* remove leftover DF x
-	
-	-Step 10- Output the tidy DF to a .txt file in the users UCI HAR Dataset directory
+
+	-Step 10- Conform variable names to comply with tidy data/R naming convention
+			* Change Uppercase letters to lower case
+			* Remove "-" character
+			* Remove duplicate "body" term from variable names
+
+	-Step 11- Output the tidy DF to a .txt file in the users UCI HAR Dataset directory
 			
 ## Naming
 The y data represented numerics 1-6 for each activity the subject participated in.  These
@@ -92,12 +97,12 @@ were taken from the file "activity_labels.txt" where each number from that file
 corresponded to an activity.  These labels were then applied to the numeric y data.
 
 The variable names for the individual measurements in the "features.txt" document were
-applied, unchanged, to the x dataset.  It is my reasoning that leaving the names such as
-as they were, (replications of terms ie BodyBody, or invalid R characters "-"), would
-preserve the integrity of the data from researcher to tidy data form.  This also would
-prevent any outside user from confusing the data/variables that were included in the
-original data with variables in the tidy data set. For all I know, the variable names in 
-the "features.txt" file is correct while the descriptor in the readme file is wrong.
+were modified to be tidy data and R compliant. This was accomplished by changing capital
+letters in variable names to all lower case letters, as well as removing the "-" character
+from the variable names.  Some of the body variables had the word "body" duplicated, ie(bodybody) 
+in the features.txt file but did not match to the definitions provided in the code book.
+I removed the duplicate "body" term of the variable name to match the variables defined in the
+codebook provided with the original dataset.
 
 ## Retrieving the results
 The output file "CourseProjectOutput.txt" can be read into R for examination with the
